@@ -109,7 +109,7 @@
         "default": ["", " ", " "]
       },
       "on-click": "pavucontrol",
-			 "on-click-right": "pamixer -t"
+      "on-click-right": "pamixer -t"
     },
     "custom/wlogout": {
       "on-click": "wlogout",

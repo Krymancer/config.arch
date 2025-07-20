@@ -86,6 +86,14 @@ button:hover {
   color: @text;
 }
 
+#bluetooth {
+  color: @blue;
+}
+
+#custom-wlogout {
+  color: @mauve;
+}
+
 .modules-right,
 .modules-left,
 .modules-center {
