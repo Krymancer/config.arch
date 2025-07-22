@@ -59,22 +59,10 @@
 /* Window */
 window {
   margin: 0px;
-  padding: 10px;
+  padding: 8px;
   border: 0.16em solid @lavender;
-  border-radius: 0.1em;
+  border-radius: 0.5em;
   background-color: @base;
-  animation: slideIn 0.5s ease-in-out both;
-}
-
-/* Slide In */
-@keyframes slideIn {
-  0% {
-     opacity: 0;
-  }
-
-  100% {
-     opacity: 1;
-  }
 }
 
 /* Inner Box */
@@ -83,18 +71,6 @@ window {
   padding: 10px;
   border: none;
   background-color: @base;
-  animation: fadeIn 0.5s ease-in-out both;
-}
-
-/* Fade In */
-@keyframes fadeIn {
-  0% {
-     opacity: 0;
-  }
-
-  100% {
-     opacity: 1;
-  }
 }
 
 /* Outer Box */
@@ -108,7 +84,7 @@ window {
 /* Scroll */
 #scroll {
   margin: 0px;
-  padding: 10px;
+  padding: 8px;
   border: none;
   background-color: @base;
 }
@@ -118,15 +94,19 @@ window {
   margin: 5px 20px;
   padding: 10px;
   border: none;
-  border-radius: 0.1em;
+  border-radius: 0.5em;
   color: @text;
   background-color: @base;
-  animation: fadeIn 0.5s ease-in-out both;
 }
 
 #input image {
     border: none;
-    color: @red;
+    color: @lavender;
+}
+
+#input:focus {
+    box-shadow: none;
+    border: none;
 }
 
 #input * {
@@ -138,11 +118,11 @@ window {
   margin: 5px;
   border: none;
   color: @text;
-  animation: fadeIn 0.5s ease-in-out both;
 }
 
 #entry {
   background-color: @base;
+  padding: 10px;
 }
 
 #entry arrow {
@@ -153,6 +133,7 @@ window {
 /* Selected Entry */
 #entry:selected {
   border: 0.11em solid @lavender;
+  border-radius: 0.5em;
 }
 
 #entry:selected #text {

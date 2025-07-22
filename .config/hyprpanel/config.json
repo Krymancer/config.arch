@@ -1,0 +1,13 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.font.name": "Inter Nerd Font Propo",
+  "theme.font.label": "Inter Nerd Font Propo",
+  "theme.font.size": "1rem",
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.location": "top left",
+  "menus.dashboard.powermenu.avatar.image": "/home/junho/Pictures/profile.png",
+  "menus.dashboard.powermenu.avatar.name": "system",
+  "theme.bar.menus.menu.dashboard.profile.radius": "100%"
+}
