@@ -46,3 +46,5 @@ eval "$(zoxide init zsh --cmd cd)"
 alias ls=eza
 alias cat=bat
 
+
+export PATH=$PATH:/home/junho/.spicetify
