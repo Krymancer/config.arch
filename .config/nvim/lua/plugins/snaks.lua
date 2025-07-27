@@ -172,13 +172,6 @@ return {
 			end,
 			desc = "Git Log File",
 		},
-		{
-			"<leader>gB",
-			function()
-				Snacks.git.blame_line()
-			end,
-			desc = "Git Blame Line",
-		},
 		-- Grep
 		{
 			"<leader>sb",

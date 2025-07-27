@@ -1,5 +1,6 @@
 return {
 	"echasnovski/mini.nvim",
+	event = "VeryLazy",
 	config = function()
 		require("mini.ai").setup({ n_lines = 500 })
 		require("mini.pairs").setup()
@@ -17,8 +18,6 @@ return {
 		require("mini.keymap").setup()
 		require("mini.statusline").setup()
 		require("mini.trailspace").setup()
-
-		-- require("mini.animate").setup()
 
 		local statusline = require("mini.statusline")
 		statusline.setup({ use_icons = vim.g.have_nerd_font })
