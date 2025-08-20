@@ -21,17 +21,7 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-### prompt theme
-ZSH_THEME="robbyrussell"
-zi snippet OMZL::git.zsh
-zi snippet OMZL::async_prompt.zsh
-zi snippet OMZP::git
-zi cdclear -q
-setopt promptsubst
-zi snippet OMZT::robbyrussell
-
 ### plugins
-
 zinit load zdharma-continuum/history-search-multi-word
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
@@ -41,10 +31,12 @@ autoload -Uz compinit
 compinit
 
 eval "$(zoxide init zsh --cmd cd)"
+eval "$(starship init zsh)"
 
 ## Alias
 alias ls=eza
 alias cat=bat
 
-
 export PATH=$PATH:/home/junho/.spicetify
+
+eval $(opam env)
